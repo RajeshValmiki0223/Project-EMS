@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Project-EMS/static/css/main.ffd6e1b5.css",
+    "main.js": "/Project-EMS/static/js/main.0a6e447c.js",
+    "static/js/453.dc73245c.chunk.js": "/Project-EMS/static/js/453.dc73245c.chunk.js",
+    "index.html": "/Project-EMS/index.html",
+    "main.ffd6e1b5.css.map": "/Project-EMS/static/css/main.ffd6e1b5.css.map",
+    "main.0a6e447c.js.map": "/Project-EMS/static/js/main.0a6e447c.js.map",
+    "453.dc73245c.chunk.js.map": "/Project-EMS/static/js/453.dc73245c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ffd6e1b5.css",
+    "static/js/main.0a6e447c.js"
+  ]
+}
