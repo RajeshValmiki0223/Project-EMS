@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from 'react'
+import ListEmployeeComponent from './components/ListEmployeeComponent'
+import HeaderComponent from './components/HeaderComponent'
+import FooterComponent from './components/FooterComponent'
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import CreateEmployeeComponent from './components/CreateEmployeeComponent'
+import UpdateEmployeeComponent from './components/UpdateEmployeeComponent'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+             <HeaderComponent/>   
+             <BrowserRouter>
+                   <div className='container'>
+
+                  <Routes>
+
+                          <Route exact path='/' element={<ListEmployeeComponent/>}/>
+                          <Route path='employees' element={<ListEmployeeComponent/>}/>
+                          <Route path="/add-employee" element={<CreateEmployeeComponent/>}/>
+                          <Route path="/update-employee/:id" element={<UpdateEmployeeComponent/>}/>
+
+                  </Routes>
+
+
+
     </div>
-  );
+           </BrowserRouter>
+           <FooterComponent/>
+     </div>
+  )
 }
 
-export default App;
+export default App
